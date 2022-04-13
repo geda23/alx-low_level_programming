@@ -1,15 +1,17 @@
+#include <stdio.h>
 #include "main.h"
-
 
 /**
  * main - Entry point
  *
- * Return: nothing, return void
+ * _putchar: Calls function _putchar in hoberton.h
+ *
+ * Return: it return a zero
  */
 
 int main(void)
 {
-_putchar('_');
+_putchar('-');
 _putchar('p');
 _putchar('u');
 _putchar('t');
