@@ -7,7 +7,6 @@
  *
  * Return: it return a zero
  */
-
 int main(void)
 {
 _putchar('-');
@@ -19,6 +18,5 @@ _putchar('h');
 _putchar('a');
 _putchar('r');
 _putchar('\n');
-
 return (0);
 }
