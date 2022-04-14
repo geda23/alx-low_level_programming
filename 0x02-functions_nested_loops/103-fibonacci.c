@@ -1,20 +1,24 @@
 #include <stdio.h>
 /**
- *main - check for multiples of 3 and 5
+ *main - print first 50 fibonacci
  *
- *Return: 0 always
+ *Return: 0 always.
  */
 int main(void)
 {
-int x = 1024, y, sum = 0;
-for (y = 0; y < x; y++)
-{
-if ((y % 3 == 0) || (y % 5 == 0))
-{
-sum = sum + y;
+	long int i, x = 1, y = 2, sum = 0, tSum = 0;
+
+	for (i = 0; i < 49; i++)
+	{
+		if ((y % 2 == 0) && (y <= 4000000))
+		{
+			tSum = tSum + y;
+		}
+		sum = x + y;
+		x = y;
+		y = sum;
+
+	}
+	printf("%ld\n", tSum);
+	return (0);
 }
-}
-printf("%d\n", sum);
-return (0);
-}
-~
